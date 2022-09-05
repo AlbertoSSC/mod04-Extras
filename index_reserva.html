@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+    <span>Tipo de habitación: </span>
+    <select name="" id="room-type">
+        <option value="">Seleccionar</option>
+        <option value="standard">Standard</option>
+        <option value="junior">Junior Suite</option>
+        <option value="suite">Suite</option>
+    </select>
+    <br>
+
+    <label for="check-spa">¿Desea usar el SPA?</label>
+    <input type="checkbox" name="" id="check-spa">
+    <br>
+
+    <span>Tamaño de habitación: </span>
+    <select name="" id="room-occupation">
+        <option value="single">Individual</option>
+        <option value="double" selected>Doble</option>
+        <option value="triple">Triple</option>
+    </select>
+    <br>
+
+    <label for="nights-count">Número de noches: </label>
+    <input type="number" min="1" name="" id="nights-count" value="1">
+    <br>
+
+    <label for="parking-nights">Noches de parking: </label>
+    <input type="number" min="0" name="" id="parking-nights">
+    <br><br>
+    
+    <!-- <input type="button" value="Calcular precio" id="calculate">
+    <br> -->
+
+    <span>Precio a pagar: </span>
+    <h2 style="display: inline;" id="final-price"></h2>
+
+
+    <script src="reservas.js"></script>
+</body>
+
+</html>
